@@ -1,0 +1,32 @@
+.container {
+	text-align: center;
+	background: blanchedalmond;
+	/*margin: auto 10px;*/
+	/*color: white;*/
+}
+
+#tribute-info {
+	/*align-items: center;*/	
+	margin: 0px auto;
+	text-align: left;
+	max-width: 70%;
+}
+
+#img-div {
+	background: white;
+	max-width: 100%;
+	display: block;
+	height: auto;
+	padding: 20px; 
+}
+
+#img-caption {
+	margin-top: 10px;
+}
+
+@media(max-width: 1024px) {
+	#image {
+		width: 90%;
+	}
+}
+
