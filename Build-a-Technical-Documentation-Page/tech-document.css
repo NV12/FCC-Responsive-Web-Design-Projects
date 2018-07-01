@@ -1,0 +1,33 @@
+
+ul.nav{
+    text-align: left;
+    margin-top: 5%;
+}
+
+p {
+    padding-left: 10px;
+}
+.container {
+    width: 100%;
+}
+.nav-item {
+    
+}
+
+.col-lg-2 {
+    position: fixed;
+    height: 100%;
+    background: #F0F8FF;
+    text-align: center;
+}
+
+.col-lg-10 {
+    padding-left: 30px;
+    float: right;
+}
+
+@media(max-width: 768px) {
+    .col-lg-2 {
+        position: relative;
+    }
+}
