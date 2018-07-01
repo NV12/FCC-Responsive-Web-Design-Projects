@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="survey-form.css">
+</head>
+<body>
+	<div class="container">
+		<h1 id="title">Survey Form</h1>
+		<p id="description">Tell us something about yourself</p>
+		
+		<form id="survey-form" action="">
+
+			<div class="row">
+				<div class="labels col-lg-6 col-md-6 col-sm-6">	 
+					<label id="name-label" for="name">Name: </label>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<input id="name" type="text" name="user-name" placeholder="Enter your name" required>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="labels col-lg-6 col-md-6 col-sm-6">
+					<label id="email-label" for="email">Email: </label>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<input id="email" type="email" name="user-email" placeholder="Enter your email" required>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="labels col-lg-6 col-md-6 col-sm-6">
+					<label id="number-label" for="age">Age: </label>		
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<input id="age" type="number" name="user-age" placeholder="Age" required>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="labels col-lg-6 col-md-6 col-sm-6">
+					<label id="dropdown-label" for="dropdown">Select Your College: </label>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<select id="dropdown" name="college-name">
+						<option value="DDIT">DDIT</option>
+						<option value="Nirma">Nirma</option>
+					</select>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="labels col-lg-6 col-md-6 col-sm-6">
+					<div><strong>Select Your Branch:</strong></div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="row">
+						<label style="font-weight: normal;"><input  type="radio" name="branch" value="CE">CE</label>
+					</div>
+					<div class="row">
+						<label style="font-weight: normal;"><input  type="radio" name="branch" value="IT">IT</label>
+					</div>
+				</div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="labels col-lg-6 col-md-6 col-sm-6">
+					<div><strong>Select Your Interests:</strong></div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="row">
+						<input type="checkbox" name="interest" value="chess">Chess
+					</div>
+					<div class="row">
+						<input type="checkbox" name="interest" value="soccer">Soccer
+					</div>
+					<div class="row">
+						<input type="checkbox" name="interest" value="programming">Programming
+					</div>
+				</div>
+			</div>
+			<br>						
+			
+
+			<div class="row">
+				<div class="labels col-lg-6 col-md-6 col-sm-6">
+					<div><strong>Comments: </strong></div>		
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<textarea rows="4" cols="20" placeholder="Enter text here.."></textarea>		
+				</div>	
+			</div>
+			<br>
+
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
