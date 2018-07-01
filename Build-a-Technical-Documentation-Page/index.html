@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>JS Tutorials</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="tech-document.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <nav id="navbar">
+                    <ul class="nav">
+                        <li>
+                            <header>
+                                <h2>JS Tutorials</h2>
+                            </header>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Introduction">Introduction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Comment">Comment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Variables">Variables</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Global_Variable">Global Variable</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Data_Types">Data Types</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Operators">Operators</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="col-lg-10 col-md-9 col-sm-8">
+                <main id="main-doc">
+                    <section id="Introduction" class="main-section">
+                        <header><h3>Introduction</h3></header>  
+                        <p>JavaScript is an object-based scripting language that is lightweight and cross-platform.</p>
+                        <p>JavaScript is not compiled but translated. The JavaScript Translator (embedded in browser) is responsible
+                            to translate the JavaScript code.</p>
+                    </section>
+                    <section id="Comment" class="main-section">
+                        <header><h3>Comment</h3></header>  
+                        <p>The JavaScript comments are meaningful way to deliver message. It is used to add information about
+                            the code, warnings or suggestions so that end user can easily interpret the code.</p>
+                        <p>The JavaScript comment is ignored by the JavaScript engine i.e. embedded in the browser.</p>
+                    </section>
+                    <section id="Variables" class="main-section">
+                        <header><h3>Variables</h3></header>  
+                        <p>A JavaScript variable is simply a name of storage location. There are two types of variables in JavaScript
+                            : local variable and global variable.</p>
+                        <p>There are some rules while declaring a JavaScript variable (also known as identifiers).</p>
+                        <ul>
+                            <li>Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign.</li>
+                            <li>After first letter we can use digits (0 to 9), for example value1.</li>
+                            <li>JavaScript variables are case sensitive, for example x and X are different variables.</li>
+                        </ul>
+                        <h4>Correct JavaScript variables</h4>
+                        <code>
+        var x = 10;  
+        var _value="sonoo";  
+    </code>
+                        <h4>JavaScript variables</h4>
+                        <code>
+        var  123=30;  
+        var *aa=320;  
+    </code>
+                    </section>
+                    <section id="Global_Variable" class="main-section">
+                        <header><h3>Global Variable</h3></header>
+                        <p>A JavaScript global variable is declared outside the function or declared with window object. It
+                            can be accessed from any function.</p>
+                        <p>Let’s see the simple example of global variable in JavaScript:</p>
+                        <code>
+        var value = 50;//global variable  <br>
+        function a() {<br>
+            alert(value);<br>
+        }<br>
+        function b() {<br>
+            alert(value);<br>
+       }  <br>
+    </code>
+                    </section>
+                    <section id="Data_Types" class="main-section">
+                        <header><h3>Data Types</h3></header>
+                        <p>JavaScript provides different data types to hold different types of values. There are two types of
+                            data types in JavaScript.
+                        </p>
+                        <ol>
+                            <li>Primitive data type</li>
+                            <li>Non-primitive (reference) data type</li>
+                        </ol>
+                        <p>JavaScript is a dynamic type language, means you don't need to specify type of the variable because
+                            it is dynamically used by JavaScript engine. You need to use var here to specify the data type.
+                            It can hold any type of values such as numbers, strings etc. For example:</p>
+                        <code>
+        var a=40;//holding number  <br>
+        var b="Rahul";//holding string <br>
+    </code>
+                    </section>
+                    <section id="Operators" class="main-section">
+                        <header><h3>Operators</h3></header>  
+                        <p>JavaScript operators are symbols that are used to perform operations on operands. For example:</p>
+                        <code>var sum=10+20;  <br></code>
+                        <p>Here, + is the arithmetic operator and = is the assignment operator.</p>
+                        <p>There are following types of operators in JavaScript.</p>
+                        <ol>
+                            <li>Arithmetic Operators</li>
+                            <li>Comparison (Relational) Operators</li>
+                            <li>Bitwise Operators</li>
+                            <li>Logical Operators</li>
+                            <li>Assignment Operators</li>
+                            <li>Special Operator</li>
+                        </ol>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
